@@ -64,14 +64,14 @@ test("Should sort by amount",()=> {
 test("should handle date chnages",()=>{
     const startDate = moment(0).add(4,'years');
     const endDate = moment(0).add(8,"years");
-    wrapper.find("withStyles(DateRangePicker)").prop('onDateChange')({startDate,endDate})
+    wrapper.find("withStyles(DateRangePicker)").prop('onDatesChange')({startDate,endDate})
     expect(setStartDate).toHaveBeenLastCalledWith(startDate);
     expect(setEndDate).toHaveBeenLastCalledWith(endDate);
 
 
 });
 test("Should handledate focus change",()=>{
-    const calenderFocused = 'endDate';
-    wrapper.find("withStyles(DateRangePicker)").prop("onFocusChange")(calenderFocused);
-    expect(wrapper.state('calenderFocused')).toBe(calenderFocused);
+    const calendarFocused = 'endDate';
+    wrapper.find("withStyles(DateRangePicker)").prop("onFocusChange")(calendarFocused);
+    expect(wrapper.state('calendarFocused')).toBe(calendarFocused);
 })
