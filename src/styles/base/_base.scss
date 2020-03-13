@@ -1,14 +1,18 @@
-html {
-  font-size: 62.5%;
+*{
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+html {
+  font-size: 62.5%;
+ 
 }
 
+
 body {
+  
+  color: $dark-grey;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
+  line-height: 1.6;
 }
 
 button {

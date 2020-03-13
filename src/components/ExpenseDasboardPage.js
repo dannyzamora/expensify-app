@@ -5,9 +5,10 @@ import ExpenseSummary from './ExpensesSummary'
 
 const ExpenseDasboardPage=()=> (
     <div>
+        <ExpenseSummary/>
         <ExpenseListFilters/>
         <ExpenseList/>
-        <ExpenseSummary/>
+        
 
         
     </div>

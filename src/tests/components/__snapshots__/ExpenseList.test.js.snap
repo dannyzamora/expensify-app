@@ -1,38 +1,92 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`shoud render expense list 1`] = `
-<div>
-  <ExpenseListItem
-    amount={195}
-    createdAt={0}
-    description="GUM"
-    id="1"
-    key="1"
-    note=""
-  />
-  <ExpenseListItem
-    amount={109500}
-    createdAt={-345600000}
-    description="RENT"
-    id="2"
-    key="2"
-    note=""
-  />
-  <ExpenseListItem
-    amount={4500}
-    createdAt={345600000}
-    description="CREDITCARD"
-    id="3"
-    key="3"
-    note=""
-  />
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="short-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="short-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <ExpenseListItem
+      amount={195}
+      createdAt={0}
+      description="GUM"
+      id="1"
+      key="1"
+      note=""
+    />
+    <ExpenseListItem
+      amount={109500}
+      createdAt={-345600000}
+      description="RENT"
+      id="2"
+      key="2"
+      note=""
+    />
+    <ExpenseListItem
+      amount={4500}
+      createdAt={345600000}
+      description="CREDITCARD"
+      id="3"
+      key="3"
+      note=""
+    />
+  </div>
 </div>
 `;
 
 exports[`shoud render expense list, empty expense 1`] = `
-<div>
-  <p>
-    No expenses
-  </p>
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="short-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="short-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <div
+      className="list-item list-item--message"
+    >
+      <span>
+        No expenses
+      </span>
+    </div>
+  </div>
 </div>
 `;
